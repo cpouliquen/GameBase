@@ -36,7 +36,7 @@ public class MainMenuView : SingletonMB<MainMenuView>
             m_BestScore.text = m_SaveManager.GetBestScore().ToString();
             m_TransitionCoroutine = StartCoroutine(Transition(true));
         }
-        else
+        else if (_GamePhase == GamePhase.END)
             m_TransitionCoroutine = StartCoroutine(Transition(false));
     }
 

@@ -28,6 +28,11 @@ public class GameManager : SingletonMB<GameManager>
         m_ScoreView = ScoreView.Instance;
     }
 
+    void Start()
+    {
+        ChangePhase(GamePhase.MAIN_MENU);
+    }
+
 	public void ChangePhase(GamePhase _GamePhase)
     {
         switch (_GamePhase)
