@@ -2,3 +2,7 @@ Library/
 AllGames.sln
 AllGames.CSharp.csproj
 AllGames.CSharp.Editor.csproj
+GameBase.sln
+GameBase.CSharp.csproj
+GameBase.CSharp.Editor.csproj
+Temp/

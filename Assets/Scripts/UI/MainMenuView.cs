@@ -22,7 +22,8 @@ public class MainMenuView : SingletonMB<MainMenuView>
 
     public void OnPlayButton()
     {
-        m_GameManager.ChangePhase(GamePhase.GAME);
+        if (m_GameManager.currentPhase == GamePhase.MAIN_MENU)
+            m_GameManager.ChangePhase(GamePhase.GAME);
     }
 
     private void OnGamePhaseChanged(GamePhase _GamePhase)
